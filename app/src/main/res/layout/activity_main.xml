@@ -1,0 +1,76 @@
+<!-- activity_main.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1a1a1a">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sweetie Max Player"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:padding="16dp"
+        android:textAlignment="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/timeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00 / 00:00"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <ImageButton
+                android:id="@+id/prevBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="@drawable/button_bg" />
+
+            <ImageButton
+                android:id="@+id/playPauseBtn"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@android:drawable/ic_media_play"
+                android:background="@drawable/button_bg"
+                android:layout_marginHorizontal="16dp" />
+
+            <ImageButton
+                android:id="@+id/nextBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_media_next"
+                android:background="@drawable/button_bg" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
